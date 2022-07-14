@@ -7958,6 +7958,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
     local Dungeon = RenUi:AddTab("Dungeon","7044284832")
     local Misc = RenUi:AddTab("Misc","6034900727")
     local Settings = RenUi:AddTab("Settings","6034509993")
+    local Tao Lao Bi Dao = RenUi:AddTab("Tao Lao Bi Dao","7055646372")
     --
     Main:AddSeperator("Settings")
     
@@ -10755,6 +10756,7 @@ elseif game.PlaceId == 6329844902 then
     local Teleport = RenUi:AddTab("Teleport","7044226690")
     local Shop = RenUi:AddTab("Shop","6031265976")
     local Misc = RenUi:AddTab("Misc","6034900727")
+    local Tao Lao Bi Dao = RenUi:AddTab("Tao Lao Bi Dao","7055646372")
     --
     Main:AddSeperator("Settings")
     
