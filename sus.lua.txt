@@ -2077,12 +2077,12 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
     
     Toggle.Name = "Toggle"
     Toggle.Parent = ScreenGui
-    Toggle.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+    Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
     Toggle.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
     Toggle.Size = UDim2.new(0, 50, 0, 50)
     Toggle.Font = Enum.Font.Code
-    Toggle.Text = "Quyen"   
-    Toggle.TextColor3 = Color3.fromRGB(255, 0, 0)
+    Toggle.Text = "🔆"   
+    Toggle.TextColor3 = Color3.fromRGB(255, 165, 0)
     Toggle.TextScaled = true
     Toggle.MouseButton1Down:connect(function()
         game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
@@ -2099,7 +2099,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
     local DevilFruit = RenUi:AddTab("Devil Fruit","7044233235")
     local Shop = RenUi:AddTab("Shop","6031265976")
     local Misc = RenUi:AddTab("Misc","6034509993")
-    local Tao Lao Bi Dao = RenUi:AddTab("Tao Lao Bi Dao","7055646372")
+    local Nike = RenUi:AddTab("Nike","7055646372")
     --------------------------------------------------------------------
     Main:AddSeperator("Settings")
     
@@ -7958,7 +7958,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
     local Dungeon = RenUi:AddTab("Dungeon","7044284832")
     local Misc = RenUi:AddTab("Misc","6034900727")
     local Settings = RenUi:AddTab("Settings","6034509993")
-    local Tao Lao Bi Dao = RenUi:AddTab("Tao Lao Bi Dao","7055646372")
+    local Nike = RenUi:AddTab("Nike","7055646372")
     --
     Main:AddSeperator("Settings")
     
@@ -10756,7 +10756,7 @@ elseif game.PlaceId == 6329844902 then
     local Teleport = RenUi:AddTab("Teleport","7044226690")
     local Shop = RenUi:AddTab("Shop","6031265976")
     local Misc = RenUi:AddTab("Misc","6034900727")
-    local Tao Lao Bi Dao = RenUi:AddTab("Tao Lao Bi Dao","7055646372")
+    local Nike = RenUi:AddTab("Nike","7055646372")
     --
     Main:AddSeperator("Settings")
     
