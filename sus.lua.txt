@@ -2099,7 +2099,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
     local DevilFruit = RenUi:AddTab("Devil Fruit","7044233235")
     local Shop = RenUi:AddTab("Shop","6031265976")
     local Misc = RenUi:AddTab("Misc","6034509993")
-    local Nice = RenUi:AddTab("Nice","7055646372")
+    local FastAttack = RenUi:AddTab("FastAttack","7055646372")
     --------------------------------------------------------------------
     Main:AddSeperator("Settings")
     
@@ -6567,7 +6567,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
         _G.SkillV = value
     end)
 
-    Nice:AddToggle("AutoClick",true,function(value)
+    FastAttack:AddToggle("AutoClick",true,function(value)
         _G.AutoClick = value
     end)
 elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId == 5931540094 or game.PlaceId == 5931540094 then
@@ -7962,7 +7962,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
     local Dungeon = RenUi:AddTab("Dungeon","7044284832")
     local Misc = RenUi:AddTab("Misc","6034900727")
     local Settings = RenUi:AddTab("Settings","6034509993")
-    local Nice = RenUi:AddTab("Nice","7055646372")
+    local FastAttack = RenUi:AddTab("FastAttack","7055646372")
     --
     Main:AddSeperator("Settings")
     
@@ -10760,7 +10760,7 @@ elseif game.PlaceId == 6329844902 then
     local Teleport = RenUi:AddTab("Teleport","7044226690")
     local Shop = RenUi:AddTab("Shop","6031265976")
     local Misc = RenUi:AddTab("Misc","6034900727")
-    local Nice = RenUi:AddTab("Nice","7055646372")
+    local FastAttack = RenUi:AddTab("FastAttack","7055646372")
     --
     Main:AddSeperator("Settings")
     
