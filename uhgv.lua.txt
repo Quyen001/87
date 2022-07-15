@@ -6573,9 +6573,6 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
         _G.SuperFastAttack = value
     end)
 
-    (getgenv()).Config = {
- ["FastAttack"] = true
-}
 coroutine.wrap(function()
 local StopCamera = require(game.ReplicatedStorage.Util.CameraShaker)StopCamera:Stop()
     for v,v in pairs(getreg()) do
