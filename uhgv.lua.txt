@@ -6642,7 +6642,7 @@ else
 end
 while cac() do 
 	AttackNoCD()
-end
+end)
 
     FastAttack:AddSeperator("FastAttackOFF")
 
