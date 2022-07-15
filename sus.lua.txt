@@ -6567,7 +6567,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
         _G.SkillV = value
     end)
 
-    Misc:AddToggle("AutoClick",true,function(value)
+    Nice:AddToggle("AutoClick",true,function(value)
         _G.AutoClick = value
     end)
 elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId == 5931540094 or game.PlaceId == 5931540094 then
