@@ -6643,8 +6643,7 @@ end
 while cac() do 
 	AttackNoCD()
 end
-    FastAttack:AddSeperator("OFF")
-    FastAttack:AddButton("SFT OFF",false,function(value)
+    FastAttack:AddButton("OFF",false,function(value)
         _G.OFF = value
     end)
 
