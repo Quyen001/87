@@ -6645,7 +6645,7 @@ while cac() do
 end
     FastAttack:AddSeperator("OFF")
     FastAttack:AddButton("SFT OFF",false,function(value)
-        _G.SuperFastAttack = value
+        _G.OFF = value
     end)
 
     local SuperFastMode = false -- Change to true if you want Super Super Super Fast attack (Like instant kill) but it will make the game kick you more than normal mode
