@@ -1,14 +1,167 @@
+local plr = game:GetService("Players").LocalPlayer
 local Notification = require(game:GetService("ReplicatedStorage").Notification)
-function v129(p15)
-    local v130 = p15;
-    while true do
-        local v131, v132 = string.gsub(v130, "^(-?%d+)(%d%d%d)", "%1,%2");
-        v130 = v131;
-        if v132 == 0 then
-            break;
-        end;    
-    end;
-    return v130;
-end;
-
-Notification.new("<Color=Yellow>QUEST COMPLETED!<Color=/>"):Display()
+ function library:AddWindow(text,keybind)
+        local bind = keybind or Enum.KeyCode.RightControl
+        local ff = false
+        local currenttab = ""
+    
+        local DoctorShiba = Instance.new("ScreenGui")
+        DoctorShiba.Name = "UlLib"
+        DoctorShiba.Parent = game.CoreGui
+        DoctorShiba.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    
+        local Main = Instance.new("Frame")
+        Main.Name = "Main"
+        Main.Parent = DoctorShiba
+        Main.AnchorPoint = Vector2.new(0.5, 0.5)
+        Main.BackgroundColor3 = Color3.fromRGB(30, 28, 39)
+        Main.BackgroundTransparency = 0.100
+        Main.BorderSizePixel = 0
+        Main.ClipsDescendants = true
+        Main.Position = UDim2.new(0.499526083, 0, 0.499241292, 0)
+        Main.Size = UDim2.new(0, 600, 0, 350)
+    
+        local Top = Instance.new("Frame")
+        Top.Name = "Top"
+        Top.Parent = Main
+        Top.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Top.BackgroundTransparency = 1.000
+        Top.BorderSizePixel = 0
+        Top.Size = UDim2.new(0, 600, 0, 20)
+    
+        local Page = Instance.new("Frame")
+        Page.Name = "Page"
+        Page.Parent = Main
+        Page.BackgroundColor3 = Color3.fromRGB(25, 23, 35)
+        Page.BackgroundTransparency = 0.100
+        Page.BorderSizePixel = 0
+        Page.Size = UDim2.new(0, 125, 0, 350)
+    
+        local NameHub = Instance.new("TextLabel")
+        NameHub.Name = "NameHub"
+        NameHub.Parent = Page
+        NameHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        NameHub.BackgroundTransparency = 1.000
+        NameHub.Position = UDim2.new(0.113333493, 0, 0, 0)
+        NameHub.Size = UDim2.new(0, 110, 0, 20)
+        NameHub.Font = Enum.Font.GothamSemibold
+        NameHub.Text = text
+        NameHub.TextColor3 = Color3.fromRGB(225, 0, 0)
+        NameHub.TextSize = 11.000
+        NameHub.TextXAlignment = Enum.TextXAlignment.Left
+    
+        local User = Instance.new("Frame")
+        User.Name = "User"
+        User.Parent = Page
+        User.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        User.BackgroundTransparency = 1.000
+        User.Position = UDim2.new(0, 0, 0.8, 30)
+        User.Size = UDim2.new(0, 125, 0, 40)
+    
+        local UserText = Instance.new("TextLabel")
+        UserText.Name = "UserText"
+        UserText.Parent = User
+        UserText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        UserText.BackgroundTransparency = 1.000
+        UserText.Position = UDim2.new(0.354999989, 0, 0, 11)
+        UserText.Size = UDim2.new(0, 80, 0, 20)
+        UserText.Font = Enum.Font.Gotham
+        UserText.Text = tostring(game.Players.LocalPlayer.Name) 
+        spawn(function()
+            while wait() do
+                pcall(function()
+                    wait(0.1) 
+                    game:GetService('TweenService'):Create(
+                        UserText,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+                        {TextColor3 = Color3.fromRGB(255, 165, 0)}
+                    ):Play() 
+                    wait(.5)            
+                    game:GetService('TweenService'):Create(
+                        UserText,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+                        {TextColor3 = Color3.fromRGB(255, 155, 0)}
+                    ):Play() 
+                    wait(.5)            
+                    game:GetService('TweenService'):Create(
+                        UserText,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+                        {TextColor3 = Color3.fromRGB(255, 255, 0)}
+                    ):Play() 
+                    wait(.5)            
+                    game:GetService('TweenService'):Create(
+                        UserText,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+                        {TextColor3 = Color3.fromRGB(0, 255, 0)}
+                    ):Play() 
+                    wait(.5)            
+                    game:GetService('TweenService'):Create(
+                        UserText,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+                        {TextColor3 = Color3.fromRGB(0, 255, 255)}
+                    ):Play() 
+                    wait(.5)            
+                    game:GetService('TweenService'):Create(
+                        UserText,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+                        {TextColor3 = Color3.fromRGB(0, 155, 255)}
+                    ):Play() 
+                    wait(.5)            
+                    game:GetService('TweenService'):Create(
+                        UserText,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+                        {TextColor3 = Color3.fromRGB(255, 0, 255)}
+                    ):Play() 
+                    wait(.5)            
+                    game:GetService('TweenService'):Create(
+                        UserText,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
+                        {TextColor3 = Color3.fromRGB(255, 0, 155)}
+                    ):Play() 
+                    wait(.5)
+                end)
+            end
+        end)
+        UserText.TextScaled = true
+        UserText.TextSize = 11.000
+        UserText.TextWrapped = true
+        UserText.TextXAlignment = Enum.TextXAlignment.Left
+    
+        local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+        UITextSizeConstraint.Parent = UserText
+        UITextSizeConstraint.MaxTextSize = 11
+    
+        local UserImage = Instance.new("ImageLabel")
+        UserImage.Name = "UserImage"
+        UserImage.Parent = User
+        UserImage.BackgroundColor3 = Color3.fromRGB(225, 225, 225)
+        UserImage.Position = UDim2.new(0, 10, 0, 9)
+        UserImage.Size = UDim2.new(0, 25, 0, 25)
+        UserImage.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.UserId.."&width=420&height=420&format=png"
+    
+        local UserImageCorner = Instance.new("UICorner")
+        UserImageCorner.CornerRadius = UDim.new(0, 100)
+        UserImageCorner.Name = "UserImageCorner"
+        UserImageCorner.Parent = UserImage
+    
+        local ScrollPage = Instance.new("ScrollingFrame")
+        ScrollPage.Name = "ScrollPage"
+        ScrollPage.Parent = Page
+        ScrollPage.Active = true
+        ScrollPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        ScrollPage.BackgroundTransparency = 1.000
+        ScrollPage.BorderSizePixel = 0
+        ScrollPage.Position = UDim2.new(0, 0, 0.086, 0)
+        ScrollPage.Size = UDim2.new(0, 125, 0, 290)
+        ScrollPage.CanvasSize = UDim2.new(0, 0, 0, 0)
+        ScrollPage.ScrollBarThickness = 0
+        local PageList = Instance.new("UIListLayout")
+        PageList.Name = "PageList"
+        PageList.Parent = ScrollPage
+        PageList.SortOrder = Enum.SortOrder.LayoutOrder
+        PageList.Padding = UDim.new(0, 7)
+    
+        local PagePadding = Instance.new("UIPadding")
+        PagePadding.Name = "PagePadding"
+        PagePadding.Parent = ScrollPage
+        PagePadding.PaddingTop = UDim.new(0, 5)
+        PagePadding.PaddingLeft = UDim.new(0, 28)
+    
+        local TabFolder = Instance.new("Folder")
+        TabFolder.Name = "TabFolder"
+        TabFolder.Parent = Main
+    
+Notification.new("<Color=Yellow>By DinhQuyenLor<Color=/>"):Display()
+local RenUi = library:AddWindow("SunHub",Enum.KeyCode.RightControl)
