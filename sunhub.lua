@@ -4598,13 +4598,13 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
                                 sethiddenproperty(game:GetService("Players").LocalPlayer, "SimulationRadius", math.huge)
                             end
                         end
-                        if _G.AutoCandy and StartMagnetCandy then
-                            if (v.HumanoidRootPart.Position - PosMonCandy.Position).Magnitude <= 250 and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                        if _G.AutoCandy1 and StartMagnetCandy1 then
+                            if (v.HumanoidRootPart.Position - PosMonCandy1.Position).Magnitude <= 250 and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
                                 v.HumanoidRootPart.Size = Vector3.new(50,50,50)
                                 v.Humanoid:ChangeState(14)
                                 v.HumanoidRootPart.CanCollide = false
                                 v.Head.CanCollide = false
-                                v.HumanoidRootPart.CFrame = PosMonCandy
+                                v.HumanoidRootPart.CFrame = PosMonCandy1
                                 if v.Humanoid:FindFirstChild("Animator") then
                                     v.Humanoid.Animator:Destroy()
                                 end
