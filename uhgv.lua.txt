@@ -6569,11 +6569,11 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
 
     FastAttack:AddSeperator("SuperFastAttack")
 
-    FastAttack:AddButton("SuperFastAttack",false,function(value)
+    FastAttack:AddToggle("SuperFastAttack",true,function(value)
         _G.SuperFastAttack = value
     end)
 
-    local SuperFastMode = true -- Change to true if you want Super Super Super Fast attack (Like instant kill) but it will make the game kick you more than normal mode
+    local SuperFastMode = false -- Change to true if you want Super Super Super Fast attack (Like instant kill) but it will make the game kick you more than normal mode
 
 local plr = game.Players.LocalPlayer
 
