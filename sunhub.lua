@@ -1496,13 +1496,6 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
 		NameQuest "ChocolateQuest2"
 		NameMon = "Candy Rebel"
 		CFrameQuest = CFrame.new(151, 23, -12774)
-		elseif MyLevel >= 2400 then
-		Mon = "Candy Pirate [Lv. 2400]"
-		NameMon = "Candy Pirate"
-		elseif MyLevel >= 2425 then
-		Mon = "Snow Demon [Lv. 2425]"
-		NameMon = "Snow Demon"
-            end
         end
     end
     
