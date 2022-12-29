@@ -1475,25 +1475,25 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
 		elseif MyLevel == 2300 or MyLevel <= 2324 then
 		Mon = "Cocoa Warrior [Lv. 2300]"
 		LevelQuest = 1
-		NameQuest = "ChocQuest1"
+		NameQuest = "ChocolateQuest1"
 		NameMon = "Cocoa Warrior"
 		CFrameQuest = CFrame.new(231, 23, -12194)
 		elseif MyLevel == 2325 or MyLevel <= 2349 then
 		Mon = "Chocolate Bar Battler [Lv. 2325]"
 		LevelQuest = 2
-		NameQuest = "ChocQuest1"
+		NameQuest = "ChocolateQuest1"
 		NameMon = "Chocolate Bar Battler"
 		CFrameQuest = CFrame.new(231, 23, -12194)
 		elseif MyLevel == 2350 or MyLevel <= 2374 then
 		Mon = "Sweet Thief [Lv. 2350]"
 		LevelQuest = 1
-		NameQuest = "ChocQuest2"
+		NameQuest = "ChocolateQuest2"
 		NameMon = "Sweet Thief"
 		CFrameQuest = CFrame.new(151, 23, -12774)
 		elseif MyLevel >= 2375 then
 		Mon = "Candy Rebel [Lv. 2375]"
 		LevelQuest = 2
-		NameQuest "ChocQuest2"
+		NameQuest "ChocolateQuest2"
 		NameMon = "Candy Rebel"
 		CFrameQuest = CFrame.new(151, 23, -12774)
 		elseif MyLevel >= 2400 then
