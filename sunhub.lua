@@ -1466,25 +1466,25 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
                 NameQuest = "CakeQuest2"
                 NameMon = "Baking Staff"
                 CFrameQuest = CFrame.new(-1927.91602, 37.7981339, -12842.5391, -0.96804446, 4.22142143e-08, 0.250778586, 4.74911062e-08, 1, 1.49904711e-08, -0.250778586, 2.64211941e-08, -0.96804446)
-            elseif MyLevel >= 2275 then
+            elseif MyLevel == 2275 or MyLevel <= 2299 then
                 Mon = "Head Baker [Lv. 2275]"
                 LevelQuest = 2
                 NameQuest = "CakeQuest2"
                 NameMon = "Head Baker"
                 CFrameQuest = CFrame.new(-1927.91602, 37.7981339, -12842.5391, -0.96804446, 4.22142143e-08, 0.250778586, 4.74911062e-08, 1, 1.49904711e-08, -0.250778586, 2.64211941e-08, -0.96804446)
-		elseif MyLevel >= 2300 then
+		elseif MyLevel == 2300 or MyLevel <= 2324 then
 		Mon = "Cocoa Warrior [Lv. 2300]"
 		LevelQuest = 1
 		NameQuest = "ChocQuest1"
 		NameMon = "Cocoa Warrior"
 		CFrameQuest = CFrame.new(231, 23, -12194)
-		elseif MyLevel >= 2325 then
+		elseif MyLevel == 2325 or MyLevel <= 2349 then
 		Mon = "Chocolate Bar Battler [Lv. 2325]"
 		LevelQuest = 2
 		NameQuest = "ChocQuest1"
 		NameMon = "Chocolate Bar Battler"
 		CFrameQuest = CFrame.new(231, 23, -12194)
-		elseif MyLevel >= 2350 then
+		elseif MyLevel == 2350 or MyLevel <= 2374 then
 		Mon = "Sweet Thief [Lv. 2350]"
 		LevelQuest = 1
 		NameQuest = "ChocQuest2"
