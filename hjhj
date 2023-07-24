@@ -1,2 +1,2 @@
-setfpscap(10)
+setfpscap(30)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Quyen001/87/main/cap"))()
