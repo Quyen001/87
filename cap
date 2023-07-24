@@ -1,7 +1,7 @@
 getgenv().Setting = {
     ["Team"] = "Pirates", --Marines,Pirates
     ["Webhook"] = {
-        ["Enabled"] = false,
+        ["Enabled"] = true,
         ["Url Webhook"] = "https://discord.com/api/webhooks/1131766944106811422/Pfbh9T2ZpAlAILDRCUiRJ2V2Obgzj7eNkc2ShfhQ2oCtPc92zgdgerbaTb8Kk4aL2SxP", --Your Url
     },
     ["Misc"] = {
