@@ -1,5 +1,7 @@
 import pyautogui as pag
 while True:
- doiip = pag.locateOnScreen('dz.png')
- doiipnew = pag.center(doiip)
- pag.click(doiipnew)
+ try:
+  doiip = pag.locateOnScreen('dz.png')
+  doiipnew = pag.center(doiip)
+  pag.click(doiipnew)
+ except:pass
