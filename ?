@@ -1,4 +1,4 @@
 import pyautogui as pag
-doiip = pag.locateOnScreen('ipnew.png')
+doiip = pag.locateOnScreen('dz.png')
 doiipnew = pag.center(doiip)
 pag.click(doiipnew)
